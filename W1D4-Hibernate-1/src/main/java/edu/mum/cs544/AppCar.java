@@ -32,7 +32,7 @@ public class AppCar {
         em.getTransaction().begin();
 
         // retieve all cars
-        TypedQuery<Car> query = em.createQuery("from Car", Car.class);
+        TypedQuery<Car> query = em.createQuery("Select c from Car c", Car.class);
         List<Car> carList = query.getResultList();
         for (Car car : carList) {
             System.out.println("brand= " + car.getBrand() + ", year= "
