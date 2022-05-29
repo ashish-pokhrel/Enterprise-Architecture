@@ -25,6 +25,17 @@ public class AppCar {
         // save the car
         em.persist(car2);
 
+        if(em.contains(car1)){
+            System.out.println("Em Contains Car1 before clear");
+        }
+        em.clear();
+        if(em.contains(car1)){
+            System.out.println("Em contains car1 after clear");
+        }
+
+        car1.setPrice(50000);
+        car1 = em.merge(car1);
+        car1.setYear("2022");
         em.getTransaction().commit();
         em.close();
 
