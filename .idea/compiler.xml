@@ -13,18 +13,27 @@
         <module name="Hibernate-1" />
         <module name="W1D2-Dependency_Injection_3" />
         <module name="W1D2-Dependency_Injection-1" />
+        <module name="Association-1" />
+        <module name="MVC" />
         <module name="AOP-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AOP-1" target="1.8" />
+      <module name="Association-1" target="1.8" />
       <module name="Bank_Application" target="1.8" />
       <module name="Hibernate-1" target="1.8" />
       <module name="Hibernate-2" target="1.8" />
+      <module name="MVC" target="1.8" />
       <module name="PersistenceAPI" target="1.8" />
       <module name="W1D2-Dependency_Injection-1" target="1.8" />
       <module name="W1D2-Dependency_Injection_2" target="1.8" />
       <module name="W1D2-Dependency_Injection_3" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MVC" options="-endorseddirs C:\Users\ashis\OneDrive\Documents\STUDY\EA\Enterprise-Architecture\W3D1-MVC\target/endorsed" />
+    </option>
   </component>
 </project>
